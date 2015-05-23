@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+    
+    <!-- 主界面顶部的三个按钮，设置、当前城市、添加城市 -->
+    <LinearLayout
+        android:id="@+id/topline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+	    <Button 
+	        android:id="@+id/settings"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="设置"/>
+
+	    <Button
+	        android:id="@+id/send_request"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="城市" />
+    	
+    	<Button 
+	        android:id="@+id/switch_city"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:text="添加城市" />"
+    
+    </LinearLayout>
+    
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"/>
+    
+</LinearLayout>
